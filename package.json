@@ -22,7 +22,9 @@
   "dependencies": {
     "@nestjs/common": "^5.1.0",
     "@nestjs/core": "^5.1.0",
+    "@nestjs/mongoose": "^6.1.2",
     "axios": "^0.18.0",
+    "mongoose": "^5.5.7",
     "reflect-metadata": "^0.1.12",
     "rxjs": "^6.2.2",
     "typescript": "^3.0.1"

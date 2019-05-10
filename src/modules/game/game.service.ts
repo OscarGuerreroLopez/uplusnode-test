@@ -64,6 +64,7 @@ export class GameService {
       forkJoin(gameInfo).subscribe(
         (data: IGame[] | IError[]) => resolve(data),
         (error: any) => {
+          // Here yeah we throw new Error cause if this does not work then we have nothing
           throw new Error('Error fetching games data');
         },
         () => {},
