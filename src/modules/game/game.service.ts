@@ -65,6 +65,8 @@ export class GameService {
         (data: IGame[] | IError[]) => resolve(data),
         (error: any) => {
           // Here yeah we throw new Error cause if this does not work then we have nothing
+          // This is done this way cause we don't have too much data, with larger sets of data
+          // another approach should be considered
           throw new Error('Error fetching games data');
         },
         () => {},
