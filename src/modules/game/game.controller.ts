@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 import { GameService } from './game.service';
-import { DateService } from './date.service';
+import { DateService } from '../share_services/date.service';
 
 @Controller('games')
 export class GameController {
