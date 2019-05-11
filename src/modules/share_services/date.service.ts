@@ -26,18 +26,29 @@ export class DateService {
     return new Promise((resolve, reject) => {
       this.gameModel
         .find()
-        .then(data => {
+        .then((data: IDate[]) => {
           resolve(
             data.filter((item: IDate) => {
               return item.called_at.getDay() === WeekDays.Monday;
             }),
           );
-
-          // resolve(data);
         })
-        .catch();
+        .catch((error: any) => {
+          reject('Error fetching calls data');
+        });
     });
-
-    // return await this.gameModel.find();
   }
 }
+
+/*
+ return await this.gameModel
+      .find()
+      .then((data: IDate[]) => {
+        return data.filter((item: IDate) => {
+          return item.called_at.getDay() === WeekDays.Monday;
+        });
+      })
+      .catch((error: any) => {
+        throw new Error('Error fetching calls data');
+      });
+    */
