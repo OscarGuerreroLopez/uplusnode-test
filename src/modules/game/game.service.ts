@@ -15,8 +15,6 @@ export class GameService {
   public async getGames(): Promise<IGame[] | IError[]> {
     const gamesList = await this.fetchGameInfo();
     return await this.getCheapest(gamesList.data);
-
-    // return gamesList.data;
   }
 
   private async fetchGameInfo(): Promise<AxiosResponse> {

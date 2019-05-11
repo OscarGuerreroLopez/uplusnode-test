@@ -35,21 +35,3 @@ export class CallsController {
       });
   }
 }
-
-/*
-this.authService
-      .checkToken(token)
-      .then()
-      .catch();
-
-
-
-      try {
-      res.status(200).json(await this.dateService.findDates());
-    } catch (error) {
-      throw Error(error);
-    }
-
-
-    res.status(404).json({ message: 'No token' });
-*/

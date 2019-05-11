@@ -39,16 +39,3 @@ export class DateService {
     });
   }
 }
-
-/*
- return await this.gameModel
-      .find()
-      .then((data: IDate[]) => {
-        return data.filter((item: IDate) => {
-          return item.called_at.getDay() === WeekDays.Monday;
-        });
-      })
-      .catch((error: any) => {
-        throw new Error('Error fetching calls data');
-      });
-    */
