@@ -30,3 +30,16 @@ $ npm install
 ```bash
 $ npm start
 ```
+
+## Extra End Point for Front-End test
+
+I added another endpoint called zonky for the front end test since I was not able to connect to the Zonky API from the browser.
+Sometimes I have done something similar to this, for example in a case where the front end part of a project was getting way too
+much data from and API that could not be changed. So I created a little node server with graphQL that would get the data
+from the original API and then have it ready for the front end guys so they could query whatever they needed without getting
+a bunch of data they didn't need
+
+## Aditional info
+
+Adding user and password information to a file is not a good idea, but I have done it here for the test so the reviewer
+can run the program fast and easy

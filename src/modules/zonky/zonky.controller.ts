@@ -11,8 +11,6 @@ export class ZonkyController {
     this.zonkyService
       .getLoans()
       .then((data: ILoan[]) => {
-        // tslint:disable-next-line:no-console
-
         res.status(200).json(data);
       })
       .catch((err: any) => {
